@@ -4,7 +4,6 @@ const shopProducts = [
     { id: 103, name: "Keyboard", price: 75 }
 ];
 
-
 let shopProduct = [];
 
 function addToCart(productId, qty){
@@ -35,19 +34,14 @@ function addToCart(productId, qty){
             quantity: qty
         }
         shopProduct.push(newShopCart);
-    }
-   
-
-  
+    } 
 }
 function calculateCartTotal(){
     total = 0;
      for(const item of shopProduct){
        
          let price = item.price * item.quantity;
-         total+=price;
-        
-                  
+         total+=price;               
      }
      return total;
 }

@@ -25,11 +25,6 @@ function calculateBillSplit(billData){
     // console.log(amountPerPerson);
     const singlPerson = Number(amountPerPerson.toFixed(1));
     return singlPerson;
-    
-    
-
-
-
 }
 
 
